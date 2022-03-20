@@ -11,19 +11,20 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet"> -->
 
     <link href="https://fonts.googleapis.com/css2?family=Kadwa&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/bgvid.css" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/bgvid.css" />
+    <link rel="stylesheet" href="src/css/animations.css" />
 </head>
 
 <body class="is-preload">
     <iframe src="https://www.youtube-nocookie.com/embed/2ehcpD__pqI?&loop=1&mute=1&playlist=2ehcpD__pqI&autoplay=1&rel=0"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen class="bgvid" alt="images/"></iframe>
+        allowfullscreen class="bgvid" id="bgvid"></iframe>
 
     <!-- Header -->
     <header id="header">
         <h1>This is Jugger.</h1>
-        <p>Laser tag with swords. Spirited, team-based fun.<br />
+        <p class="delay">Laser tag with swords. Spirited, team-based fun.<br />
             Want to play? Here are the <a href="asdflk">rules</a>!</p>
     </header>
     <!-- TODO link to rules -->
@@ -31,6 +32,9 @@
 
     <!-- Footer -->
     <footer id="footer">
+        <ul>
+            <a href="credits.html">Credits</a>
+        </ul>
         <ul class="copyright">
             &copy; Calvin Wong 2022
         </ul>

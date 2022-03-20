@@ -1,0 +1,30 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+* {
+    --fadein-delay: 1s;
+}
+
+body {
+    animation: fadeIn 5s;
+    animation-fill-mode: forwards;
+}
+#header{
+    transition-delay: var(--fadein-delay);
+}
+    #header .delay {
+        transition-delay: 2*var(--fadein-delay);
+    }
+
+
+
+#footer {
+    transition-delay: 3 * var(--fadein-delay);
+}
+
