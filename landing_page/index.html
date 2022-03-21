@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>What is Jugger?</title>
+    <title>Jugger?</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
@@ -13,10 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Kadwa&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/main.css" />
     <link rel="stylesheet" href="src/css/bgvid.css" />
-    <link rel="stylesheet" href="src/css/animations.css" />
+    <!-- <link rel="stylesheet" href="src/css/animations.css" /> -->
 </head>
 
-<body class="is-preload">
+<body>
     <iframe src="https://www.youtube-nocookie.com/embed/2ehcpD__pqI?&loop=1&mute=1&playlist=2ehcpD__pqI&autoplay=1&rel=0"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen class="bgvid" id="bgvid"></iframe>
@@ -25,20 +25,35 @@
     <header id="header">
         <h1>This is Jugger.</h1>
         <p class="delay">Laser tag with swords. Spirited, team-based fun.<br />
-            Want to play? Here are the <a href="asdflk">rules</a>!</p>
+            Want to play? Here are the <a href="credits.html">rules</a>!</p>
     </header>
     <!-- TODO link to rules -->
 
+    <div id="credits" style="display: none;">
+        <a href="#" id="close-credits">Close Credits</a>
+        <ul>
+            <li>
+                Footage linked <a href="https://www.youtube.com/watch?v=MZVN0b9mgHc">here</a>: <br>
+                Marc Böhmer
+            </li>
+            <li>
+                Background photos (in case YouTube didn't load): <br>
+                Ashley Zhang
+            </li>
+        </ul>
+    </div>
 
     <!-- Footer -->
     <footer id="footer">
         <ul>
-            <a href="credits.html">Credits</a>
+            <a href="#credits" id="open-credits">Credits</a>
         </ul>
         <ul class="copyright">
-            &copy; Calvin Wong 2022
+            &copy; Calvin Wong 2022 (idk who'd want to steal this anyway)
         </ul>
     </footer>
+
+    <script src="src/js/credits.js"></script>
 
 </body>
 

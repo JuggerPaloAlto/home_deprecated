@@ -1,4 +1,4 @@
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     0% {
         opacity: 0;
     }
@@ -8,23 +8,24 @@
 }
 
 * {
-    --fadein-delay: 1s;
+    --fadein-delay: 3s;
 }
 
-body {
-    animation: fadeIn 5s;
-    animation-fill-mode: forwards;
+#bgvid {
+    animation: fadeIn 3s;
 }
+
 #header{
-    transition-delay: var(--fadein-delay);
+    animation: fadeIn 3s;
+    animation-delay: var(--fadein-delay);
 }
     #header .delay {
-        transition-delay: 2*var(--fadein-delay);
+        animation: fadeIn 3s;
+        animation-delay: 2*var(--fadein-delay);
     }
 
-
-
 #footer {
-    transition-delay: 3 * var(--fadein-delay);
-}
+    animation: fadeIn 3s;
+    animation-delay: 3 * var(--fadein-delay);
+} */
 
