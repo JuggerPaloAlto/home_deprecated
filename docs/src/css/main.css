@@ -3,7 +3,7 @@ body {
   /* font-family: 'Suez One', serif; */
   font-family: 'Kadwa', serif;
   overflow: hidden;
-  background-image: url("bg0.jpg");
+  background-image: url("../../img/bg0.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
