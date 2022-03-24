@@ -1,0 +1,13 @@
+body {
+    color:whitesmoke;
+    /* font-family: 'Suez One', serif; */
+    font-family: 'Kadwa', serif;
+}
+
+pre {
+    font-family: 'Kadwa', serif;
+}
+
+.tab {
+    tab-size: 2;
+}

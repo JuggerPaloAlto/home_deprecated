@@ -1,12 +1,14 @@
-
 .expand-collapse {
     max-width: 60em;
     margin: 0 auto;
 }
-.expand-collapse p {
+.expand-collapse p, pre {
     background-color: #cc872c;
     padding: 0.5em;
     margin: 0;
+}
+.expand-collapse pre {
+    padding: 1em;
 }
 .expand-collapse div {
     padding: 0;
