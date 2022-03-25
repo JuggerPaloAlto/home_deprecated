@@ -1,11 +1,8 @@
 @import "text.css";
+@import "background.css";
 
 body {
   overflow: hidden;
-  background-image: url("../../img/bg0.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: black;
 }
 
 /* Links */
