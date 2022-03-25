@@ -61,6 +61,12 @@ body {
     transform: translateZ(0);
     z-index: 2;
   }
+  .parallax__layer--top div {
+    padding: 1em;
+    border-radius: 1em;
+    background-color: rgba(17, 24, 34, 0.884);
+  }
+  
 
   .parallax__layer--back {
     left: 10%;
