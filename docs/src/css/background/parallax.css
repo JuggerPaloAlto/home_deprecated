@@ -1,5 +1,10 @@
 @import "scrollbar.css";
 
+:root {
+  --parallax-speed: 9;
+  --parallax-translate: -8px;
+}
+
 body {
     /* The image used */
     /* background-image: url("../../img/bg1.jpg"); */
@@ -73,8 +78,8 @@ body {
 
   .parallax__layer--back {
     left: 10%;
-    -webkit-transform: translateZ(-4px) scale(6.5);
-    transform: translateZ(-4px) scale(6.5);
+    -webkit-transform: translateZ(var(--parallax-translate)) scale(var(--parallax-speed));
+    transform: translateZ(var(--parallax-translate)) scale(var(--parallax-speed));
     z-index: -1;
   }
 
