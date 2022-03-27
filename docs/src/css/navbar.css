@@ -1,15 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+/* @import url('https://fonts.googleapis.com/css?family=Oswald'); */
  :root {
 	 --background: #000;
 	 --text: #fff;
-	 --highlight: #ff1ead;
+	 --highlight: #ff1e1e;
 }
- .navbox {
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-	 flex-direction: column;
+ nav {
+	/* height: var(--navbar-height); */
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+	background-color: rgba(22, 22, 22, 0.98);
 }
+nav ul {
+	list-style-type: none;
+	justify-content: center;
+	margin: 0;
+}
+
  .theme-switch {
 	 --background: #fff;
 	 --text: #000;
@@ -57,7 +65,7 @@
 	 margin: 10px 30px;
 	 position: relative;
 	 color: var(--text);
-	 font-family: 'Oswald', sans-serif;
+	 /* font-family: 'Oswald', sans-serif; */
 	 font-size: 20px;
 	 text-transform: uppercase;
 	 text-decoration: none;

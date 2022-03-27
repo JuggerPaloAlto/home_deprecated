@@ -4,6 +4,10 @@ body {
     font-family: 'Kadwa', serif;
 }
 
+.light-theme {
+    color: black;
+}
+
 pre {
     font-family: 'Kadwa', serif;
 }
@@ -11,3 +15,4 @@ pre {
 .tab {
     tab-size: 2;
 }
+

@@ -1,3 +1,5 @@
+@import "scrollbar.css";
+
 body {
     /* The image used */
     /* background-image: url("../../img/bg1.jpg"); */
@@ -34,6 +36,7 @@ body {
 } */
 .parallax {
     height: 100vh;
+    /* height: calc(100vh - var(--navbar-height)); */
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-perspective: 1px;
@@ -61,7 +64,7 @@ body {
     transform: translateZ(0);
     z-index: 2;
   }
-  .parallax__layer--top div {
+  .parallax__layer--top .title {
     padding: 1em;
     border-radius: 1em;
     background-color: rgba(17, 24, 34, 0.884);

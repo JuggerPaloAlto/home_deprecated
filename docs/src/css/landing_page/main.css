@@ -15,9 +15,9 @@ body {
     -webkit-text-stroke-color: black; */
     overflow: hidden;
   }
-    #header p {
-      font-size:large;
-    }
+  #header p {
+    font-size:large;
+  }
   
   #footer {
     opacity: 0.25;
@@ -69,3 +69,18 @@ body {
     /* border-bottom: solid 2px rgb(255, 174, 0); */
   }
   
+  /* Links */
+a {
+  -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  border-bottom: solid 2px rgb(135, 207, 255);
+  color: rgb(135, 207, 255);
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: double 2px rgb(255, 255, 255);
+  color: #ffffff;
+  text-decoration: none; 
+}

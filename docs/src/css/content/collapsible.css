@@ -4,7 +4,7 @@
 }
 
 .collapse {
-    background-color: rgba(255,255,255,0);
+    background-color: transparent;
     border-bottom: 1px solid #eee;
     cursor: pointer;
     color: #fff;
@@ -14,12 +14,18 @@
     overflow:hidden;
     transition: all 0.4s;
   }
+
+  .light-theme {
+    background-color: black;
+    border-bottom: 1px solid #111;
+  }
+
   .collapse * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    
   }
+
   .collapse.active {
      background-color: rgba(255,255,255,0.9);
     /* box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2); */
@@ -31,16 +37,19 @@
     transition: all 0.2s,max-height 4.8s;
     border-radius: .25em;
   }
+
   .collapse h2 {
     font-size: 18px;
     line-height: 20px;
     position:relative
   }
+
   .slide{
     /* box-shadow:none !important; */
     margin:0px !important;
     padding:10px !important
   }
+
   .transparent{
     background-color: rgba(255,255,255,0) !important;
     color:#fff !important;
@@ -48,6 +57,7 @@
     margin:0px !important;
     padding:10px !important
   }
+
   .collapse h2::after{
     content: "+";
     text-align:center;
@@ -62,6 +72,7 @@
     right:0;
     top:2px;
   }
+
   .collapse:hover h2::after{
     opacity:1
   }

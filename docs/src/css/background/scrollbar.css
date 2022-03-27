@@ -1,0 +1,20 @@
+/* Parallax */
+.parallax{
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: black white;   /* scroll thumb and track */ 
+  }
+.parallax::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .parallax::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);        /* color of the tracking area */
+  }
+  
+  .parallax::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
+  }
+
+  
