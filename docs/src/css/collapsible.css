@@ -1,34 +1,72 @@
-.expand-collapse {
-    max-width: 70em;
-    margin: 0 auto;
-}
-.expand-collapse p, pre {
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
-    background-color: #25282c;
-    padding: 0.5em;
-    margin: 0;
-}
-.expand-collapse pre {
-    padding: 1em;
-}
-.expand-collapse div {
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
-    padding: 0;
-    margin: -.3em 0 0 0;
-}
-.expand-collapse h3 {
-    border-radius: 1em;
-    background-color: rgb(0, 71, 153);
-    cursor:  pointer;
-    padding: 0.5em;
-    margin: 0 0 .25em;
-}
-.expand-collapse h3.active {
-    border-radius: 0em;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+.wrap{
+  width:90%;
+  margin:0.25em auto;
 }
 
+.collapse {
+    background-color: rgba(255,255,255,0);
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    margin:0px;
+    max-height:40px;
+    overflow:hidden;
+    transition: all 0.4s;
+  }
+  .collapse * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+  }
+  .collapse.active {
+     background-color: rgba(255,255,255,0.9);
+    /* box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2); */
+    z-index: 200;
+    color:#444;
+    max-height:3000px;
+    padding:10px 20px;
+    margin: 10px -10px;
+    transition: all 0.2s,max-height 4.8s;
+    border-radius: .25em;
+  }
+  .collapse h2 {
+    font-size: 18px;
+    line-height: 20px;
+    position:relative
+  }
+  .slide{
+    /* box-shadow:none !important; */
+    margin:0px !important;
+    padding:10px !important
+  }
+  .transparent{
+    background-color: rgba(255,255,255,0) !important;
+    color:#fff !important;
+    /* box-shadow:none !important; */
+    margin:0px !important;
+    padding:10px !important
+  }
+  .collapse h2::after{
+    content: "+";
+    text-align:center;
+    position:absolute;
+    width:15px;
+    height:15px;
+    /* border:1px solid #ccc;
+    border-radius:50%; */
+    font-size:12px;
+    line-height:15px;
+    opacity:0.5;
+    right:0;
+    top:2px;
+  }
+  .collapse:hover h2::after{
+    opacity:1
+  }
   
+  .collapse.active h2::after{
+    content: "-";
+    top:1.5px;
+  }
