@@ -1,7 +1,8 @@
 /* @import url('https://fonts.googleapis.com/css?family=Oswald'); */
  :root {
 	 --background: #000;
-	 --text: #fff;
+	 --text: rgb(228, 228, 228);
+	 --text-highlight: rgb(255, 228, 228);
 	 --highlight: #ff1e1e;
 }
  nav {
@@ -84,6 +85,10 @@ nav ul {
 	 opacity: 1;
 	 transition: 0.5s transform ease, 0.8s opacity ease;
 	 transform: translateX(0);
+}
+
+ul a:hover {
+	color: var(--text-highlight);
 }
  ul .active {
 	 color: var(--highlight);
