@@ -1,5 +1,71 @@
-@import "text.css";
+@import "main.css";
+@import "bgvid.css";
 
 body {
     overflow: hidden;
 }
+
+#header {
+    position: absolute;
+    top: 25vh;
+    left: 5%;
+    font-weight: bolder;
+    text-shadow: 2px 2px #000000;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
+    overflow: hidden;
+  }
+    #header p {
+      font-size:large;
+    }
+  
+  #footer {
+    opacity: 0.25;
+    color: rgba(255, 255, 255, 0.5);
+    bottom: 4%;
+    left: 5%;
+    position: absolute; 
+  }
+    #footer .copyright {
+        font-size: 0.8em;
+        font-weight:normal;
+        list-style: none;
+        padding: 0; 
+    }
+    #footer:hover {
+      opacity: .95; 
+    }
+    #footer a {
+      font-size: small;
+      border-bottom: none;
+    }
+  
+    #footer ul {
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      padding-inline-start: 0;
+    }
+  
+  
+  #credits {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25vh;
+    width: 60%;
+    background-color: #212527c9;
+    /* border: 3px solid #89d0ff; */
+    padding: 10px;
+    border-radius: .5em;
+  }
+  #close-credits {
+    float: right;
+    margin-right: .75em;
+    color: rgba(255, 174, 0, 0.75);
+    border-bottom: none;
+    /* border-bottom: solid 2px rgba(255, 174, 0, 0.75); */
+  }
+  #close-credits:hover {
+    color: rgb(255, 174, 0);
+    /* border-bottom: solid 2px rgb(255, 174, 0); */
+  }
+  
