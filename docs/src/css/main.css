@@ -1,4 +1,4 @@
-@import "text.css";
+@import "content/text.css";
 
 body {
     animation: fadeInAnimation ease 2s;
