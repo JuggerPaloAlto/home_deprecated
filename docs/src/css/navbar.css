@@ -4,18 +4,36 @@
 	 --text: rgb(228, 228, 228);
 	 --text-highlight: rgb(255, 228, 228);
 	 --highlight: #ff1e1e;
+	 --navbar-height: 12vh;
 }
  nav {
-	/* height: var(--navbar-height); */
+	max-height: var(--navbar-height);
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 2;
 	background-color: rgba(22, 22, 22, 0.98);
+	display: flex;
+
 }
-nav ul {
-	list-style-type: none;
+nav img {
+	/* position: absolute; */
+	object-fit: contain;
+	display: flex;
+	padding: 1em;
+	flex: 0.5 1 auto;
+	max-width:42px;
+}
+
+nav .links {
+	width: 80%;
+	display: flex;
 	justify-content: center;
+}
+
+nav .links ul {
+	list-style-type: none;
+	/* justify-content: center; */
 	margin: 0;
 }
 
@@ -54,16 +72,13 @@ nav ul {
  .light-theme a {
 	 color: var(--text);
 }
- nav {
-	 display: flex;
-	 justify-content: center;
-}
- ul {
+
+ .links ul {
 	 display: flex;
 	 list-style-type: none;
 }
- ul a {
-	 margin: 10px 30px;
+ .links ul a {
+	 margin: 16px 30px;
 	 position: relative;
 	 color: var(--text);
 	 /* font-family: 'Oswald', sans-serif; */
@@ -71,7 +86,7 @@ nav ul {
 	 text-transform: uppercase;
 	 text-decoration: none;
 }
- ul a:before {
+ .links ul a:before {
 	 position: absolute;
 	 bottom: -2px;
 	 content: '';
@@ -81,19 +96,47 @@ nav ul {
 	 transform: translateX(-100%);
 	 opacity: 0;
 }
- ul a:hover:before {
+ .links ul a:hover:before {
 	 opacity: 1;
 	 transition: 0.5s transform ease, 0.8s opacity ease;
 	 transform: translateX(0);
 }
 
-ul a:hover {
+.links ul a:hover {
 	color: var(--text-highlight);
 }
- ul .active {
+ .links ul .active {
 	 color: var(--highlight);
 }
- ul .active:hover:before {
+ .links ul .active:hover:before {
 	 opacity: 0;
 }
  
+
+/* sidenavbar */
+.sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: -250px;
+	background-color: #111; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+
+  #main {
+  transition: margin-left .5s;
+  }

@@ -20,18 +20,31 @@
     <!-- <div class="bg-image"></div> -->
     <!-- <img class="background" src="img/bgbg0.jpg"> -->
 
-    <nav>
-        <ul>
-            <a href="index.html"">Video</a>
-            <a href="rules.html" class="active">Rules</a>
-            <a href="https://instagram.com/sasha.codes/">Instagram</a>
-            <a href="https://twitter.com/sa_sha26">Twitter</a>
-        </ul>
-        <!-- <button class="theme-switcher">Theme Switcher</button> -->
-    </nav>
+    <!-- <nav>
+        <img src="img/favicon.png" alt="Jugger">
+        <div class="links">
+            <ul>
+                <a href="index.html"">Video</a>
+                <a href="rules.html" class="active">Rules</a>
+                <a href="https://instagram.com/sasha.codes/">Instagram</a>
+                <a href="https://twitter.com/sa_sha26">Twitter</a>
+            </ul>
+        </div>
+        <button class="theme-switcher">Theme Switcher</button>
+    </nav> -->
+
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      
+      
 
 
-            <div class="parallax">
+            <div id="main" class="parallax">
                 <div class="parallax__layer parallax__layer--back">
                     <!-- <div class="title">
                 <img src="img/bg1.jpg">
@@ -39,7 +52,10 @@
                     <img src="img/bg1.jpg">
                 </div>
                 <div class="parallax__layer parallax__layer--top">
-                    <div class="title"><b>Scroll down <br> Note: page still under construction</b></div>
+                    <div class="title">
+                        <span onclick="openNav()">open</span>
+                        <b>Scroll down <br> Note: page still under construction</b></div>
+                    
                 </div>
                 <div class="parallax__layer parallax__layer--base">
 
@@ -138,6 +154,7 @@ Objective - get ball (also called skull or jug) and outscore the other team befo
             <script src="src/js/jquery-3.6.0.min.js"></script>
             <script src="src/js/collapsible.js"></script>
             <script src="src/js/theme_switch.js"></script>
+            <script src="src/js/sidenav.js"></script>
 
 </body>
 
