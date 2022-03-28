@@ -27,3 +27,5 @@ function closeNav() {
     sidenav_close.style.left = "0";
     main.onclick=null;
 }
+
+handleNav();
