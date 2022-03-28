@@ -182,35 +182,51 @@ nav .links ul {
 
 
 
-/* .arrow {
+.arrow {
+	transform: translate(-10px, 5px);
 	width: 1.25rem;
-	height: 1.25rem;
+	height: .25rem;
 	display: inline-block;
 	position: relative;
-	margin: 0 1rem;
+	/* margin: 0 1rem; */
   }
   .arrow span {
 	top: 0.5rem;
 	position: absolute;
-	width: 0.75rem;
-	height: 0.1rem;
-	background-color: #efefef;
+	width: 4.75em;
+	height: 0.15rem;
+	background-color: #efefefd5;
 	display: inline-block;
 	transition: all 0.2s ease;
   }
   .arrow span:first-child {
-	top: 0;
-	transform: rotate(45deg);
+	top: -20px;
+	transform: rotate(40deg);
   }
   .arrow span:last-child {
-	bottom: 0;
-	transform: rotate(-45deg);
+	bottom: 20px;
+	transform: rotate(-40deg);
   }
   .arrow.active span:first-child {
-	transform: rotate(-45deg);
+	transform: rotate(-40deg);
   }
   .arrow.active span:last-child {
-	transform: rotate(45deg);
+	transform: rotate(40deg);
+  }
+
+  /* .arrow span:first-child {
+	top: -13px;
+	transform: rotate(31deg);
+  }
+  .arrow span:last-child {
+	bottom: 13px;
+	transform: rotate(-31deg);
+  }
+  .arrow.active span:first-child {
+	transform: rotate(-31deg);
+  }
+  .arrow.active span:last-child {
+	transform: rotate(31deg);
   } */
   
 
@@ -219,7 +235,7 @@ nav .links ul {
 	border-radius: 50%;
 	background-color: rgb(110, 110, 110);
 	position: fixed;
-	left: 24%;
+	left: 0%;
 	top:44%;
 	z-index: 6;
 
@@ -227,13 +243,13 @@ nav .links ul {
 	background:#111;
 	width:2em;
 	height:2em;
-	padding:4em;
+	padding:3em;
 	font-size:0.5em;
 	display:block;
 	box-shadow:0px 0px 5px 0px #333;
   }
 
-  .arrow-wrap.active {
+  /* .arrow-wrap.active {
 	padding:2.5em;
   }
 
@@ -261,4 +277,4 @@ nav .links ul {
   border-width: 3em 3em 0 3em;
   border-color: #111 transparent transparent transparent;
 
-  }
+  } */
