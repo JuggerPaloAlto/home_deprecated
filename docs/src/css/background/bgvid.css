@@ -6,7 +6,11 @@
   height: 120%;
   object-fit: cover;
   z-index: -1;
-  pointer-events: none;
+  pointer-events: none; 
+}
+
+* {
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1600px) {

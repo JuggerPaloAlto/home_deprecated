@@ -6,6 +6,7 @@
 	 --highlight: #ff1e1e;
 	 --navbar-height: 12vh;
 	 --navbar-width: 250px;
+	 --navbar-background: rgba(17, 17, 17, 0.98);
 }
  nav {
 	max-height: var(--navbar-height);
@@ -13,7 +14,7 @@
 	top: 0;
 	width: 100%;
 	z-index: 2;
-	background-color: rgba(22, 22, 22, 0.98);
+	background-color: var(--navbar-background);
 	display: flex;
 
 }
@@ -82,8 +83,8 @@ nav .links ul {
 	 margin: 16px 30px;
 	 position: relative;
 	 color: var(--text);
-	 /* font-family: 'Oswald', sans-serif; */
-	 font-size: 12px;
+	 /* font-family: 'Oswald', sans-serif;
+	 font-size: 12px; */
 	 text-transform: uppercase;
 	 text-decoration: none;
 }
