@@ -1,4 +1,4 @@
-$('.collapse').on('click',function(e){
+$('.collapse h2').on('click',function(e){
 	e.preventDefault();
-	$(this).toggleClass('active');
+	$(this).parent().toggleClass('active');
 });

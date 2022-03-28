@@ -6,7 +6,6 @@
 .collapse {
     background-color: transparent;
     border-bottom: 1px solid #eee;
-    cursor: pointer;
     color: #fff;
     padding: 10px;
     margin:0px;
@@ -41,7 +40,8 @@
   .collapse h2 {
     font-size: 18px;
     line-height: 20px;
-    position:relative
+    position:relative;
+    cursor: pointer;
   }
 
   .slide{
