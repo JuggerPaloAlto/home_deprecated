@@ -5,6 +5,7 @@
 	 --text-highlight: rgb(255, 228, 228);
 	 --highlight: #ff1e1e;
 	 --navbar-height: 12vh;
+	 --navbar-width: 250px;
 }
  nav {
 	max-height: var(--navbar-height);
@@ -120,7 +121,7 @@ nav .links ul {
 	position: fixed; /* Stay in place */
 	z-index: 1; /* Stay on top */
 	top: 0; /* Stay at the top */
-	left: -250px;
+	left: -var(--navbar-width);
 	background-color: #111; /* Black*/
 	overflow-x: hidden; /* Disable horizontal scroll */
 	padding-top: 60px; /* Place content 60px from the top */
@@ -139,4 +140,125 @@ nav .links ul {
 
   #main {
   transition: margin-left .5s;
+  }
+  
+/* Button to close sidenav */
+/* .arrow {
+	border: solid rgb(255, 255, 255);
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 10px;
+	transition: 0.3s;
+}
+
+.right {
+	margin-left: 0;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+	.right:hover {
+		margin-left: 12px;
+		transform: rotate(135deg);
+		-webkit-transform: rotate(135deg);
+	}
+
+	#close-sidenav .arrow {
+	width:50%;
+	height:50%;
+	margin: 0 auto;
+} 
+*/
+/* #close-sidenav {
+	border-radius: 50%;
+	background-color: rgb(110, 110, 110);
+	position: fixed;
+	left: 0;
+	top:44%;
+	z-index: 6;
+	width: 25%;
+	height: 25%;
+} */
+
+
+
+/* .arrow {
+	width: 1.25rem;
+	height: 1.25rem;
+	display: inline-block;
+	position: relative;
+	margin: 0 1rem;
+  }
+  .arrow span {
+	top: 0.5rem;
+	position: absolute;
+	width: 0.75rem;
+	height: 0.1rem;
+	background-color: #efefef;
+	display: inline-block;
+	transition: all 0.2s ease;
+  }
+  .arrow span:first-child {
+	top: 0;
+	transform: rotate(45deg);
+  }
+  .arrow span:last-child {
+	bottom: 0;
+	transform: rotate(-45deg);
+  }
+  .arrow.active span:first-child {
+	transform: rotate(-45deg);
+  }
+  .arrow.active span:last-child {
+	transform: rotate(45deg);
+  } */
+  
+
+  #close-sidenav {
+	cursor: pointer; 
+	border-radius: 50%;
+	background-color: rgb(110, 110, 110);
+	position: fixed;
+	left: 24%;
+	top:44%;
+	z-index: 6;
+
+	margin-left:-5em;
+	background:#111;
+	width:2em;
+	height:2em;
+	padding:4em;
+	font-size:0.5em;
+	display:block;
+	box-shadow:0px 0px 5px 0px #333;
+  }
+
+  .arrow-wrap.active {
+	padding:2.5em;
+  }
+
+  .arrow {
+	float:left;
+	position:relative;
+	width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #ffffff transparent transparent transparent;
+	-webkit-transform:rotate(-90deg) translate(8%, -42%);
+	transform:rotate(-90deg) translate(8%, -42%);
+  }
+
+
+.arrow:after {
+	content:'';
+	position:absolute;
+	top:-3.7em;
+	left:-3.1em;
+	width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #111 transparent transparent transparent;
+
   }

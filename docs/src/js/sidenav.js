@@ -1,6 +1,13 @@
 const sidenav = document.getElementById("sidenav");
 const main = document.getElementById("main");
 
+function handleNav() {
+    if (main.onclick==null) {
+        openNav();
+    } else {
+        closeNav();
+    }
+}
 
 function openNav() {
     sidenav.style.width = "250px";
