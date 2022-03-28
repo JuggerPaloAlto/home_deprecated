@@ -83,7 +83,7 @@ nav .links ul {
 	 position: relative;
 	 color: var(--text);
 	 /* font-family: 'Oswald', sans-serif; */
-	 font-size: 20px;
+	 font-size: 12px;
 	 text-transform: uppercase;
 	 text-decoration: none;
 }
@@ -116,16 +116,19 @@ nav .links ul {
 
 /* sidenavbar */
 .sidenav {
-	height: 100%; /* 100% Full-height */
-	width: 0; /* 0 width - change this with JavaScript */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Stay on top */
-	top: 0; /* Stay at the top */
+	height: 100%; 
+	width: 0; /* changed via javascript */
+	position: fixed; 
+	z-index: 4;
+	top: 0; 
 	left: -var(--navbar-width);
-	background-color: #111; /* Black*/
-	overflow-x: hidden; /* Disable horizontal scroll */
-	padding-top: 60px; /* Place content 60px from the top */
-	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 60px;
+  }
+
+  .sidenav, .arrow, #close-sidenav{
+	transition: 0.5s;
   }
   
   /* The navigation menu links */
@@ -143,99 +146,52 @@ nav .links ul {
   }
   
 /* Button to close sidenav */
-/* .arrow {
-	border: solid rgb(255, 255, 255);
-	border-width: 0 3px 3px 0;
-	display: inline-block;
-	padding: 10px;
-	transition: 0.3s;
-}
-
-.right {
-	margin-left: 0;
-	transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
-}
-
-	.right:hover {
-		margin-left: 12px;
-		transform: rotate(135deg);
-		-webkit-transform: rotate(135deg);
-	}
-
-	#close-sidenav .arrow {
-	width:50%;
-	height:50%;
-	margin: 0 auto;
-} 
-*/
-/* #close-sidenav {
-	border-radius: 50%;
-	background-color: rgb(110, 110, 110);
-	position: fixed;
-	left: 0;
-	top:44%;
-	z-index: 6;
-	width: 25%;
-	height: 25%;
-} */
-
-
 
 .arrow {
-	transform: translate(-10px, 5px);
+	transform: translate(4px, 0px);
 	width: 1.25rem;
 	height: .25rem;
 	display: inline-block;
 	position: relative;
-	/* margin: 0 1rem; */
   }
+
+  .arrow.active {
+	transform: translate(-7px, -1px);
+  }
+
   .arrow span {
 	top: 0.5rem;
 	position: absolute;
-	width: 4.75em;
-	height: 0.15rem;
+	width: 3em;
+	height: 0.1rem;
 	background-color: #efefefd5;
 	display: inline-block;
 	transition: all 0.2s ease;
   }
   .arrow span:first-child {
-	top: -20px;
+	top: -9px;
 	transform: rotate(40deg);
   }
   .arrow span:last-child {
-	bottom: 20px;
+	bottom: 9px;
 	transform: rotate(-40deg);
   }
-  .arrow.active span:first-child {
-	transform: rotate(-40deg);
+  .arrow span:first-child.active {
+	top: -5px;
+	transform: rotate(-31deg);
   }
-  .arrow.active span:last-child {
-	transform: rotate(40deg);
+  .arrow span:last-child.active {
+	bottom: 5px;
+	transform: rotate(31deg);
   }
 
-  /* .arrow span:first-child {
-	top: -13px;
-	transform: rotate(31deg);
-  }
-  .arrow span:last-child {
-	bottom: 13px;
-	transform: rotate(-31deg);
-  }
-  .arrow.active span:first-child {
-	transform: rotate(-31deg);
-  }
-  .arrow.active span:last-child {
-	transform: rotate(31deg);
-  } */
-  
 
   #close-sidenav {
 	cursor: pointer; 
 	border-radius: 50%;
 	background-color: rgb(110, 110, 110);
 	position: fixed;
-	left: 0%;
+	left: 0;
 	top:44%;
 	z-index: 6;
 
@@ -243,38 +199,8 @@ nav .links ul {
 	background:#111;
 	width:2em;
 	height:2em;
-	padding:3em;
+	padding:2.5em;
 	font-size:0.5em;
 	display:block;
 	box-shadow:0px 0px 5px 0px #333;
   }
-
-  /* .arrow-wrap.active {
-	padding:2.5em;
-  }
-
-  .arrow {
-	float:left;
-	position:relative;
-	width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 3em 3em 0 3em;
-  border-color: #ffffff transparent transparent transparent;
-	-webkit-transform:rotate(-90deg) translate(8%, -42%);
-	transform:rotate(-90deg) translate(8%, -42%);
-  }
-
-
-.arrow:after {
-	content:'';
-	position:absolute;
-	top:-3.7em;
-	left:-3.1em;
-	width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 3em 3em 0 3em;
-  border-color: #111 transparent transparent transparent;
-
-  } */
