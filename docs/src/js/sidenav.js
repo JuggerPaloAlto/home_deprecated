@@ -17,7 +17,7 @@ function openNav() {
     main.style.marginLeft = "250px";
     sidenav.style.left = "0";
     sidenav_close.style.left = "262px";
-    setTimeout(() => main.onclick=closeNav, 100);
+    setTimeout(() => main.onclick=handleNav, 100);
 }
 
 function closeNav() {
