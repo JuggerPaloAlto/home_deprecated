@@ -1,14 +1,17 @@
 const sidenav = document.getElementById("sidenav");
 const main = document.getElementById("main");
 
+
 function openNav() {
     sidenav.style.width = "250px";
     main.style.marginLeft = "250px";
     sidenav.style.left = "0";
-  }
-  
-  function closeNav() {
+    setTimeout(() => main.onclick=closeNav, 100);
+}
+
+function closeNav() {
     sidenav.style.width = "0";
     main.style.marginLeft = "0";
     sidenav.style.left = "-250px";
-  }
+    main.onclick=null;
+}
