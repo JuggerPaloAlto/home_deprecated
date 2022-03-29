@@ -60,7 +60,7 @@ nav .links ul {
 	 left: 4px;
 	 transition: 0.5s all ease;
 }
- .light-theme {
+ /* .light-theme {
 	 --background: #fff;
 	 --text: #000;
 	 background: var(--background);
@@ -73,7 +73,7 @@ nav .links ul {
 }
  .light-theme a {
 	 color: var(--text);
-}
+} */
 
  .links ul {
 	 display: flex;

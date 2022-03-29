@@ -3,6 +3,7 @@
 :root {
   --parallax-speed: 9;
   --parallax-translate: -8px;
+  --background-color:rgba(17, 24, 34, 0.884);
 }
 
 body {
@@ -72,7 +73,7 @@ body {
   .parallax__layer--top .title {
     padding: 1em;
     border-radius: 1em;
-    background-color: rgba(17, 24, 34, 0.884);
+    background-color: var(--background-color);
   }
 
   /* Links */

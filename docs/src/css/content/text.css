@@ -17,3 +17,6 @@ pre {
     tab-size: 2;
 }
 
+a {
+    cursor: pointer;
+}
