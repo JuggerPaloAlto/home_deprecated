@@ -74,6 +74,18 @@ body {
     border-radius: 1em;
     background-color: rgba(17, 24, 34, 0.884);
   }
+
+  /* Links */
+  .parallax__layer--top .title a {
+    -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    color: rgb(135, 207, 255);
+  }
+  .parallax__layer--top .title a:hover {
+    color: #ffffff;
+  }
   
 
   .parallax__layer--back {

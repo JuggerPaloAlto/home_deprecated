@@ -81,3 +81,20 @@
     content: "-";
     top:1.5px;
   }
+
+  /* Links */
+  .collapse p a {
+    -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    border-bottom: solid 2px rgb(25, 96, 143);
+    color: rgb(25, 96, 143);
+    text-decoration: none;
+  }
+  .collapse p a:hover {
+    border-bottom: double 2px rgb(0, 58, 97);
+    color: rgb(0, 58, 97);
+    text-shadow: 1px 1px rgb(139, 202, 245);
+  }
+    
