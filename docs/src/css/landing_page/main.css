@@ -71,10 +71,6 @@ body {
   
   /* Links */
 a {
-  -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  transition: border-bottom-color 0.2s ease, color 0.2s ease;
   border-bottom: solid 2px rgb(135, 207, 255);
   color: rgb(135, 207, 255);
   text-decoration: none;

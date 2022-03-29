@@ -1,3 +1,8 @@
+:root {
+    --a-color-light: #0062ff;
+    --a-color: rgb(135, 207, 255);
+}
+
 body {
     color:whitesmoke;
     /* font-family: 'Suez One', serif; */
@@ -18,5 +23,16 @@ pre {
 }
 
 a {
+    -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    transition: border-bottom-color 0.2s ease, color 0.2s ease;
     cursor: pointer;
+    color: var(--a-color);
+}
+a:hover, a.light-theme:hover {
+    color: #ffffff;
+}
+a.light-theme {
+    color: var(--a-color-light);
 }

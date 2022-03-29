@@ -3,7 +3,8 @@
 :root {
   --parallax-speed: 9;
   --parallax-translate: -8px;
-  --background-color:rgba(17, 24, 34, 0.884);
+  --background-color:rgba(24, 24, 24, 0.9);
+  --background-color-light: rgba(231, 231, 231, 0.9);
 }
 
 body {
@@ -40,6 +41,7 @@ body {
     filter: blur(10px);
     object-fit: cover;
 } */
+
 .parallax {
     height: 100vh;
     /* height: calc(100vh - var(--navbar-height)); */
@@ -76,18 +78,9 @@ body {
     background-color: var(--background-color);
   }
 
-  /* Links */
-  .parallax__layer--top .title a {
-    -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-    -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-    -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-    transition: border-bottom-color 0.2s ease, color 0.2s ease;
-    color: rgb(135, 207, 255);
+  .parallax__layer--top .title.light-theme {
+    background-color: var(--background-color-light);
   }
-  .parallax__layer--top .title a:hover {
-    color: #ffffff;
-  }
-  
 
   .parallax__layer--back {
     left: 10%;
