@@ -39,7 +39,7 @@
   
 /* Button to close sidenav */
 .arrow {
-	transform: translate(4px, 1px);
+	transform: translate(4px, 4px);
 	width: 1.25rem;
 	height: .25rem;
 	display: inline-block;

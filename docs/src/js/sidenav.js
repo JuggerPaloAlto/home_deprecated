@@ -3,7 +3,8 @@ const main = document.getElementById("main");
 const sidenav_close = document.getElementById("close-sidenav");
 
 function handleNav() {
-    if (main.onclick==null) {
+    console.log(main.style.left);
+    if (main.onclick == null) {
         openNav();
     } else {
         closeNav();
@@ -17,7 +18,7 @@ function openNav() {
     main.style.marginLeft = "250px";
     sidenav.style.left = "0";
     sidenav_close.style.left = "262px";
-    setTimeout(() => main.onclick=handleNav, 100);
+    setTimeout(() => main.onclick=() => {}, 100);
 }
 
 function closeNav() {
