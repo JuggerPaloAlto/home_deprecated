@@ -39,7 +39,7 @@ nav .links ul {
 	margin: 0;
 }
 
- .theme-switch {
+ /* .theme-switch {
 	 --background: #fff;
 	 --text: #000;
 	 color: var(--text);
@@ -59,7 +59,7 @@ nav .links ul {
 	 top: 3px;
 	 left: 4px;
 	 transition: 0.5s all ease;
-}
+} */
  /* .light-theme {
 	 --background: #fff;
 	 --text: #000;
