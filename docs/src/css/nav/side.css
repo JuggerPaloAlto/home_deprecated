@@ -62,6 +62,7 @@
 	position: absolute;
 	width: 3em;
 	height: 0.12em;
+	border-radius: 1px;
 	/* background-color: #efefefd5; */
 	background-image: linear-gradient(#efefefd5, #efefefd5);
 	display: inline-block;
