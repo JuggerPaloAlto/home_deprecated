@@ -17,7 +17,8 @@
   }
 
   .sidenav.light-theme {
-    background-color: #eee;
+    /* background-color: rgba(238, 238, 238, 0.95); */
+	background-image: linear-gradient(to bottom right, rgb(201, 201, 201), rgb(255, 255, 255));
   }
   
   /* The navigation menu links */
@@ -61,7 +62,8 @@
 	position: absolute;
 	width: 3em;
 	height: 0.12em;
-	background-color: #efefefd5;
+	/* background-color: #efefefd5; */
+	background-image: linear-gradient(#efefefd5, #efefefd5);
 	display: inline-block;
 	transition: all 0.2s ease;
   }
@@ -86,7 +88,8 @@
   #close-sidenav {
 	cursor: pointer; 
 	border-radius: 50%;
-	background-color: rgb(110, 110, 110);
+	background-image: linear-gradient(rgb(49, 49, 49), rgb(26, 26, 26));
+	/* background-color: rgb(110, 110, 110); */
 	position: fixed;
 	left: 0;
 	top:44%;
